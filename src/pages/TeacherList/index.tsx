@@ -10,9 +10,9 @@ import api from "../../services/api";
 import styles from "./styles";
 
 const TeacherList: React.FC = () => {
-  const [teachers, setTeachers] = useState([]);
+  const [teachers, setTeachers] = useState<TeacherProps[]>([]);
   const [favorites, setFavorites] = useState<number[]>([]);
-  const [isFilterVisible, setIsFilterVisible] = useState(false);
+  const [isFilterVisible, setIsFilterVisible] = useState(true);
   const [subject, setSubject] = useState("");
   const [week_day, setWeekDay] = useState("");
   const [time, setTime] = useState("");
@@ -38,7 +38,7 @@ const TeacherList: React.FC = () => {
   async function handleFilterSubmit() {
     loadFavorites();
 
-    const { data } = await api.get("classes", {
+    const { data } = await api.get<TeacherProps[]>("classes", {
       params: {
         subject,
         week_day,
@@ -47,7 +47,7 @@ const TeacherList: React.FC = () => {
     });
 
     setTeachers(data);
-    if (data) {
+    if (data.length > 0) {
       setIsFilterVisible(false);
     }
   }

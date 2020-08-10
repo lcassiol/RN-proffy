@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import AsyncStorage from "@react-native-community/async-storage";
 
-import { useFocusEffect } from '@react-navigation/native';
+import { useFocusEffect } from "@react-navigation/native";
 import TeacherItem, { TeacherProps } from "../../components/TeacherItem";
 import PageHeader from "../../components/PageHeader";
 
@@ -21,11 +21,11 @@ const Favorites: React.FC = () => {
     });
   }
 
-  useFocusEffect(() => {
+  useFocusEffect(
     React.useCallback(() => {
-      loadFavorites(); 
-    },[]) 
-  });
+      loadFavorites();
+    }, [])
+  );
 
   return (
     <View style={styles.container}>
@@ -39,11 +39,8 @@ const Favorites: React.FC = () => {
         }}
       >
         {favorites.map((teacher: TeacherProps) => {
-          return (
-            <TeacherItem key={teacher.id} teacher={teacher} favorited/>
-          )
-        }}
-        
+          return <TeacherItem key={teacher.id} teacher={teacher} favorited />;
+        })}
       </ScrollView>
     </View>
   );

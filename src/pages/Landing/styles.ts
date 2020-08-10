@@ -17,9 +17,10 @@ const styles = StyleSheet.create({
     fontSize: 30,
     lineHeight: 30,
     marginTop: 80,
+    paddingTop: 5,
   },
   titleBold: {
-    fontFamily: "Poppins_600SemiBodld",
+    fontFamily: "Poppins_600SemiBold",
   },
   buttonsContainer: {
     flexDirection: "row",
@@ -30,7 +31,8 @@ const styles = StyleSheet.create({
     height: 150,
     width: "48%",
     backgroundColor: "#333",
-    borderRadius: 24,
+    borderRadius: 8,
+    padding: 24,
     justifyContent: "space-between",
   },
   buttonPrimary: {
