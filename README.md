@@ -56,3 +56,7 @@ $ expo start
 - Alterar o arquivo /src/services/api.ts para colocar o ip do backend
 
 > O DevTools do Expo fica aberto por padrão em [`http://localhost:19002`](http://localhost:19002)
+
+---
+- Backend: https://github.com/lcassiol/nodejs-proffy
+- Web: https://github.com/lcassiol/reactjs-proffy
