@@ -21,3 +21,39 @@
 </div>
 
 ---
+
+<div align="center">
+
+# :iphone: _**Mobile**_
+[![LAYOUT MOBILE](https://img.shields.io/badge/Layout%20Mobile-black?style=for-the-badge&logo=figma&logoColor=red")]()
+
+</div>
+
+O aplicação mobile foi desenvolvida usando o framework [**React Native**](https://reactnative.dev/) com [**Typescript**](https://www.typescriptlang.org/), e a _SDK 38_ da ferramenta [**Expo**](https://expo.io/).
+
+Home | Study | Favorites
+---|---|---
+| <img src="https://github.com/lcassiol/RN-proffy/blob/master/src/assets/images/screenshots/proffy-home.png?raw=true" width="350" /> | <img src="https://github.com/lcassiol/RN-proffy/blob/master/src/assets/images/screenshots/proffy-resultsearch.png?raw=true" width="350" /> | <img src="https://github.com/lcassiol/RN-proffy/blob/master/src/assets/images/screenshots/proffy-favorites.png?raw=true" width="350" /> |
+
+## :arrow_forward: **Getting Started**
+
+```
+
+_com **yarn**_
+
+```bash
+# Instalar expo-cli globalmente
+$ yarn global add expo-cli
+
+# Instalar dependências
+$ yarn
+
+```
+
+Iniciar DevTools do expo
+
+```bash
+$ expo start
+```
+
+> O DevTools do Expo fica aberto por padrão em [`http://localhost:19002`](http://localhost:19002)
