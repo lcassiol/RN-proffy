@@ -37,10 +37,6 @@ Home | Study | Favorites
 
 ## :arrow_forward: **Getting Started**
 
-```
-
-_com **yarn**_
-
 ```bash
 # Instalar expo-cli globalmente
 $ yarn global add expo-cli
@@ -50,10 +46,13 @@ $ yarn
 
 ```
 
-Iniciar DevTools do expo
+Iniciar expo
 
 ```bash
 $ expo start
 ```
+
+- Baixar o aplicativo do Expo diretamente da loja e entao escanear o QR Code OU Iniciar o emulador de sua preferência
+- Alterar o arquivo /src/services/api.ts para colocar o ip do backend
 
 > O DevTools do Expo fica aberto por padrão em [`http://localhost:19002`](http://localhost:19002)
